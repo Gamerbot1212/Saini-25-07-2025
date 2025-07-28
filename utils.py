@@ -72,7 +72,7 @@ async def progress_bar(current, total, reply, start): #NIKHIL SAINI BOTS
         else: #NIKHIL SAINI BOTS
             perc = f"{current * 100 / total:.1f}%" #NIKHIL SAINI BOTS
             elapsed_time = round(diff) #NIKHIL SAINI BOTS
-            speed = current / elapsed_time #NIKHIL SAINI BOTS
+            speed = (current / elapsed_time) * 10 #NIKHIL SAINI BOTS
             remaining_bytes = total - current #NIKHIL SAINI BOTS
             if speed > 0: #NIKHIL SAINI BOTS
                 eta_seconds = remaining_bytes / speed #NIKHIL SAINI BOTS
